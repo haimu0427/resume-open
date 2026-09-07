@@ -1,0 +1,11 @@
+This repository contains components under different licenses:
+
+1. `resume.cls` is licensed under the LaTeX Project Public License (LPPL),
+   version 1.3c or later. Its original copyright and license notice are kept
+   in that file.
+2. `resume-zh.tex`, `README.md`, `Makefile`, and `Dockerfile` are licensed
+   under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+   License: https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the CC BY 4.0 materials for any purpose, including
+commercial use, provided that you give appropriate credit and indicate changes.

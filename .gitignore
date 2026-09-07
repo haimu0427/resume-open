@@ -1,0 +1,11 @@
+# LaTeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+auto/
+
+# Generated résumé; commit a hand-picked preview only if desired.
+resume-zh.pdf

@@ -1,0 +1,90 @@
+%% 中文简历模板：请将尖括号中的示例文字替换为你的信息。
+\documentclass[zh,compact]{resume}
+
+% 姓名区所占页眉宽度比例；联系信息较多时可适当减小。
+\headersplit{0.22}
+\fileinfo{\faEdit{} \today}
+
+\name{名字}{姓氏}
+\keywords{Go, Python, Backend, Kubernetes, PostgreSQL}
+\tagline{求职意向 / 职位名称}
+
+\profile{%
+  \mobile{138-0000-0000}
+  \email{name@example.com} \\
+  \github{your-github}
+  \iconlink{\faGlobe}{https://example.com}{example.com} \\
+  \university{某某大学}
+  \degree{计算机科学与技术 \textbullet\ 本科 \textbullet\ 2022--2026}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+\sectionTitle{个人简介}{\faUser}
+%======================================================================
+\begin{abstract}
+\begin{competences}[4.8em]
+  \comptence{求职方向}{后端开发 \textbullet\ 云原生 \textbullet\ 平台工程}
+  \comptence{个人概述}{用一至两句话概括你的技术方向、最有代表性的经历和能带来的价值。优先写可验证的成果，例如性能提升、用户规模、交付效率或业务影响。}
+\end{competences}
+\end{abstract}
+
+%======================================================================
+\sectionTitle{教育经历}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education{2022.09}[2026.06]{某某大学}{计算机学院}{计算机科学与技术}{本科}
+\end{educations}
+
+%======================================================================
+\sectionTitle{实习 / 工作经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2025.06]%
+    {2025.09}%
+    {某某科技有限公司 \aside{后端开发实习生}}%
+    [\begin{itemize}
+      \item 用动作、技术和结果描述你的贡献，例如：负责订单服务接口开发，将核心接口 P95 延迟降低 30\%。
+      \item 用数字说明影响范围，例如日请求量、用户数、成本或故障率变化。
+    \end{itemize}]
+\end{experiences}
+
+%======================================================================
+\sectionTitle{项目经历}{\faCode}
+%======================================================================
+\begin{projects}
+  \project%
+    {2025.03}%
+    [2025.05]%
+    {个人项目}%
+    {后端服务}%
+    {项目名称}%
+    [一句话说明项目解决的问题、目标用户和你的职责。]%
+    {\begin{itemize}
+      \item \textbf{技术实现}：说明架构或关键技术选择，以及为什么这样做。
+      \item \textbf{成果量化}：说明性能、稳定性、效率或用户体验方面的结果。
+    \end{itemize}}%
+    [Go, Gin, PostgreSQL, Redis, Docker]
+\end{projects}
+
+%======================================================================
+\sectionTitle{核心技能}{\faWrench}
+%======================================================================
+\twocolumnsection{%
+  \begin{competences}[4.8em]
+    \comptence{编程语言}{Go、Python、SQL、Shell}
+    \comptence{后端开发}{HTTP / gRPC、REST API、鉴权与测试}
+    \comptence{数据存储}{PostgreSQL、MySQL、Redis}
+  \end{competences}%
+}{%
+  \begin{competences}[4.8em]
+    \comptence{云原生}{Docker、Kubernetes、CI/CD}
+    \comptence{工程能力}{Git、Linux、监控与排障}
+    \comptence{其他技能}{按岗位要求补充，不要罗列未掌握的工具}
+  \end{competences}%
+}
+
+\end{document}
